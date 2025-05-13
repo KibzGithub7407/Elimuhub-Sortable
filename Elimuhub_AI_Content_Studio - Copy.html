@@ -1,0 +1,263 @@
+<!-- Elimuhub_AI_Content_Studio.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elimuhub AI Content Studio</title>
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --secondary-color: #E74C3C;
+            --brand-font: 'Arial', sans-serif;
+        }
+
+        body {
+            font-family: var(--brand-font);
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .ai-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .template-preview,
+        .drag-drop-zone,
+        .seo-checker,
+        .extra-tools {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .drag-drop-zone {
+            border-style: dashed;
+            text-align: center;
+        }
+
+        textarea {
+            width: 100%;
+            resize: vertical;
+            font-size: 1rem;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-family: var(--brand-font);
+        }
+
+        button {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+            user-select: none;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            max-height: 220px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .ai-container {
+                padding: 10px;
+            }
+            button {
+                width: 100%;
+                padding: 12px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ai-container">
+        <h1>Elimuhub AI Content Studio</h1>
+
+        <!-- Content Generation Section -->
+        <div class="template-preview" id="content-creation">
+            <h2>Automated Content Creation</h2>
+            <p>Integrated AI Tools:
+                <a href="https://writesonic.com" target="_blank" rel="noopener">Writesonic</a>,
+                <a href="https://www.jasper.ai" target="_blank" rel="noopener">Jasper</a>,
+                <a href="https://eduaide.ai" target="_blank" rel="noopener">Eduaide.Ai</a>,
+                <a href="https://copy.ai" target="_blank" rel="noopener">Copy.ai</a>,
+                <a href="https://www.inferkit.com" target="_blank" rel="noopener">InferKit</a>,
+                <a href="https://rytr.me" target="_blank" rel="noopener">Rytr</a>
+            </p>
+            <ul>
+                <li>Blog Post Generator featuring topics:
+                    <ul>
+                        <li>Study Abroad Guides</li>
+                        <li>Scholarship Opportunities</li>
+                        <li>Application Tips & Strategies</li>
+                        <li>Educational Trends & Innovations</li>
+                        <li>Success Stories & Testimonials</li>
+                        <li>Exam Preparation Techniques</li>
+                        <li>Career Pathways & Advice</li>
+                    </ul>
+                </li>
+                <li>Curriculum & Lesson Plan Builder</li>
+                <li>FAQ Auto-Completion & Help Article Generator</li>
+                <li>Social Media Content & Caption Creator</li>
+                <li>Email Newsletter Drafting</li>
+            </ul>
+        </div>
+
+        <!-- Web Design Interface -->
+        <div class="drag-drop-zone" id="layout-builder">
+            <h3>Drag-and-Drop Layout Builder</h3>
+            <p>Powered by:
+                <a href="https://www.example.com" target="_blank" rel="noopener">AI Web Layout Generator</a>
+            </p>
+            <div id="layout-preview" style="min-height:150px; color:#777;">Layout Preview Area (Drag and drop components here)</div>
+        </div>
+
+        <!-- Educational Resources -->
+        <div class="template-preview" id="learning-object-creator">
+            <h2>Learning Object Creator</h2>
+            <textarea id="topic-input" placeholder="Enter topic..." rows="3" aria-label="Enter topic"></textarea>
+            <button id="generate-lesson">Generate Lesson Plan</button>
+            <pre id="lesson-plan-output" aria-live="polite" style="margin-top:15px;"></pre>
+        </div>
+
+        <!-- Additional AI Tools -->
+        <div class="extra-tools" id="extra-tools">
+            <h2>Additional AI Tools</h2>
+            <p>Integrated Tools for Enhanced Productivity:</p>
+            <ul>
+                <li><a href="https://grammarly.com" target="_blank" rel="noopener">Grammarly</a> - Grammar & Style Checker</li>
+                <li><a href="https://canva.com" target="_blank" rel="noopener">Canva</a> - Graphic Design & Visual Content</li>
+                <li><a href="https://surferseo.com" target="_blank" rel="noopener">Surfer SEO</a> - SEO Audit and Optimization</li>
+                <li><a href="https://answerthpublic.com" target="_blank" rel="noopener">AnswerThePublic</a> - Content Ideas & Insights</li>
+            </ul>
+        </div>
+
+        <!-- Analytics Integration -->
+        <div class="seo-checker" id="performance-dashboard">
+            <h3>Performance Dashboard</h3>
+            <p>
+                Integrated Tools:
+                <a href="https://www.educateme.com" target="_blank" rel="noopener">EducateMe</a>,
+                <a href="https://www.intellischool.com" target="_blank" rel="noopener">Intellischool</a>,
+                <a href="https://www.google.com/analytics" target="_blank" rel="noopener">Google Analytics</a>,
+                <a href="https://hotjar.com" target="_blank" rel="noopener">Hotjar</a>,
+                <a href="https://www.hubspot.com/products/marketing/analytics" target="_blank" rel="noopener">HubSpot Analytics</a>
+            </p>
+            <div id="analytics-widget" style="min-height:100px; color:#777;">Analytics Widget Area</div>
+        </div>
+
+        <!-- Export Options -->
+        <div id="export-section">
+            <h3>Export to Blogger</h3>
+            <button onclick="exportHTML()">Generate HTML</button>
+            <pre id="output-code" aria-label="Generated HTML code" tabindex="0"></pre>
+        </div>
+    </div>
+
+    <script>
+        // Simple simulation for lesson plan generation
+        document.getElementById('generate-lesson').addEventListener('click', function () {
+            const topic = document.getElementById('topic-input').value.trim();
+            const output = document.getElementById('lesson-plan-output');
+
+            if (!topic) {
+                output.textContent = 'Please enter a topic to generate a lesson plan.';
+                return;
+            }
+
+            // Simulate AI generated lesson plan outline for topic
+            const lessonPlan = 
+`Lesson Plan for: ${topic}
+
+1. Introduction
+   - Overview of ${topic}
+   - Key concepts to understand
+
+2. Learning Objectives
+   - Define clear goals learners should achieve
+
+3. Core Content
+   - Main topics and explanations
+   - Relevant examples and case studies
+
+4. Activities
+   - Interactive exercises and discussions
+   - Quizzes and assessments
+
+5. Summary
+   - Recap key takeaways
+   - Encourage further reading and research
+
+6. Assessment Questions
+   - Multiple-choice, short answer, or essay questions to evaluate understanding`;
+
+            output.textContent = lessonPlan;
+        });
+
+        // Export the entire HTML content to the pre block for blogger
+        function exportHTML() {
+            // Hide the export code container temporarily to avoid recursion
+            const exportSection = document.getElementById('export-section');
+            exportSection.style.display = 'none';
+
+            // Prepare the full page HTML string
+            const doctype = '<!DOCTYPE html>\n';
+            let htmlContent = document.documentElement.outerHTML;
+
+            // Re-show export section after capture
+            exportSection.style.display = 'block';
+
+            // Show in output-code pre element
+            const outputCode = document.getElementById('output-code');
+            outputCode.textContent = doctype + htmlContent;
+            outputCode.focus();
+        }
+    </script>
+</body>
+</html>
+
